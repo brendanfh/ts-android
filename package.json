@@ -1,0 +1,23 @@
+{
+  "name": "ts-android",
+  "version": "0.0.1",
+  "description": "An android prototype made with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --watch",
+    "serve": "webpack-dev-server"
+  },
+  "keywords": [
+    "typescript",
+    "android"
+  ],
+  "author": "Brendan Hansen",
+  "license": "MIT",
+  "dependencies": {
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
