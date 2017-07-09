@@ -1,4 +1,4 @@
-import Renderer from "./Renderer";
+import Renderer from "./renderer";
 
 let WIDTH = 720;
 let HEIGHT = WIDTH * 16 / 9;
@@ -14,7 +14,7 @@ function main(): void {
     Renderer.setColor([1, 1, 1, 1]);
     Renderer.setClearColor([1, 0, 0, 1]);
     Renderer.clear();
-    for (let i=0; i<400; i++) {
+    for (let i=0; i<1000; i++) {
         Renderer.updateData(i, new Float32Array([
             i, i, 0, 0, 1, 1, 1, 1,
             360+i, i, 0, 0, 1, 1, 1, 1,
@@ -22,7 +22,7 @@ function main(): void {
             i, 640+i, 0, 0, 1, 1, 1, 1
         ]));
     }
-    Renderer.draw(0, 400);
+    Renderer.draw(0, 1000);
 }
 
 window.addEventListener("load", main);
